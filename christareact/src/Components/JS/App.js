@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 import '../CSS/App.css';
 import ButtonAppBar from './AppBar'
@@ -23,13 +23,44 @@ const theme = createMuiTheme({
 })
 
 function App() {
+  const [openMenue, setOpenMenue] = useState(false)
+
+  
+  const menueClick = event => {
+    setOpenMenue(true)
+  }
+
+  function menueField(openMenue) {
+    
+    if (openMenue === true) {
+    
+      return (
+        <div>
+          <div>menue item</div>
+          
+          <div>menue item</div>
+        </div>
+      )
+    }
+
+  }
+
+
   return (
     <div className="App">
       <ThemeProvider theme={theme}>
         <header className="App-header">
-          <ButtonAppBar></ButtonAppBar>
-
+          <ButtonAppBar state={menueClick}></ButtonAppBar>
         </header>
+        <div>
+          <div className="appBody">
+            <div>app body</div>
+
+          </div>
+          <div className="menueBody">
+            {menueField(openMenue)}
+          </div>
+        </div>
       </ThemeProvider>
     </div>
   );

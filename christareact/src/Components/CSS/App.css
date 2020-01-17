@@ -1,6 +1,19 @@
 .App {
   text-align: center;
+  height: 500px;
+  background-color: #fff8dc;
 }
 
+.appBody {
+  float: left;
+  width: 70%;
 
+}
 
+.menueBody {
+  float: right;
+  width: 30%;
+ top: auto;
+ bottom: 0px;
+  background-color: #6f6d66;
+}
