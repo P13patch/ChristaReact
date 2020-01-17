@@ -9,19 +9,21 @@
   float: left;
   width: 100%;
   height: 200px;
-  background-color: #a5a39b;
   position: static;
+  padding: 20px;
   z-index: 1;
 }
 
 .menuBody {
+  color: white;
   right: 0px;
-  width: 30%;
+  width: 20%;
   display: flex;
   flex-direction: column ;
+  padding: 20px;
   min-height: 100%;
   position: absolute;
-  background-color: #6f6d66;
+  background-image: linear-gradient(#6f6d66,#57524c);
   z-index: -1;
 }
 

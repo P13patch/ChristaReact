@@ -37,7 +37,7 @@ function App() {
       return (
         <div>
           <div>menu item</div>
-          <button>MENU</button>
+          
           <div>menu item</div>
         </div>
       )
