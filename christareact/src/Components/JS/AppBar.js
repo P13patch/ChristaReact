@@ -20,8 +20,6 @@ const useStyles = makeStyles(theme => ({
 }));
 
 function ButtonAppBar(props) {
-  
-    const [openMenue, setOpenMenue] = useState(false)
     const classes = useStyles();
 
 

@@ -23,22 +23,22 @@ const theme = createMuiTheme({
 })
 
 function App() {
-  const [openMenue, setOpenMenue] = useState(false)
+  const [openMenu, setOpenMenu] = useState(false)
 
-  
-  const menueClick = event => {
-    setOpenMenue(true)
-  }
+  const showMenu = event => {
+      document.getElementById("menuBody").style.zIndex = "2"
+      setOpenMenu(true)
+    } 
 
-  function menueField(openMenue) {
+  function menuField(openMenu) {
     
-    if (openMenue === true) {
+    if (openMenu === true) {
     
       return (
         <div>
-          <div>menue item</div>
-          
-          <div>menue item</div>
+          <div>menu item</div>
+          <button>MENU</button>
+          <div>menu item</div>
         </div>
       )
     }
@@ -50,15 +50,15 @@ function App() {
     <div className="App">
       <ThemeProvider theme={theme}>
         <header className="App-header">
-          <ButtonAppBar state={menueClick}></ButtonAppBar>
+          <ButtonAppBar state={showMenu}></ButtonAppBar>
         </header>
         <div>
           <div className="appBody">
             <div>app body</div>
 
           </div>
-          <div className="menueBody">
-            {menueField(openMenue)}
+          <div className="menuBody" id="menuBody">
+            {menuField(openMenu)}
           </div>
         </div>
       </ThemeProvider>
