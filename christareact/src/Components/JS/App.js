@@ -7,6 +7,7 @@ import Weddings from './Weddings'
 
 import { createMuiTheme } from '@material-ui/core/styles';
 import { ThemeProvider } from '@material-ui/styles';
+import ButtonAppBar from './AppBar'
 
 const theme = createMuiTheme({
   palette: {
@@ -32,7 +33,7 @@ function App() {
     <div className="App">
       <ThemeProvider theme={theme}>
         <Router>
-
+        <ButtonAppBar></ButtonAppBar>
           <Switch>
             <Route exact path='/' component={Home}></Route>
             <Route path='/Weddings' component={Weddings}></Route>

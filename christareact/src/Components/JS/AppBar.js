@@ -1,5 +1,8 @@
 import React, {useState} from 'react'
+import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import '../CSS/AppBar.css'
 
+import Menu from './Menu'
 import { makeStyles } from '@material-ui/core/styles';
 
 import { Button, Typography, IconButton } from "./const"
@@ -19,9 +22,12 @@ const useStyles = makeStyles(theme => ({
     },
 }));
 
-function ButtonAppBar(props) {
+function ButtonAppBar() {
     const classes = useStyles();
 
+
+
+  
 
     return (
         <div className={classes.root}>
@@ -32,11 +38,10 @@ function ButtonAppBar(props) {
                     <Typography variant="h6" color="secondary-constrastText" className={classes.title}>
                         Christa Cutler Photography
                     </Typography>
-                    <IconButton edge="start" className={classes.menuButton} aria-label="menu" onClick={props.state}>
-                        <MenuIcon />
-                    </IconButton>
+                    <Menu></Menu>
                 </Toolbar>
             </AppBar>
+           
         </div>
     );
 }
