@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 
 import '../CSS/App.css';
 import ButtonAppBar from './AppBar'
@@ -49,6 +50,7 @@ function App() {
   return (
     <div className="App">
       <ThemeProvider theme={theme}>
+        <Router>
         <header className="App-header">
           <ButtonAppBar state={showMenu}></ButtonAppBar>
         </header>
@@ -61,6 +63,12 @@ function App() {
             {menuField(openMenu)}
           </div>
         </div>
+        <Switch>
+          <Route></Route>
+          <Route></Route>
+          <Route></Route>
+        </Switch>
+</Router>
       </ThemeProvider>
     </div>
   );
