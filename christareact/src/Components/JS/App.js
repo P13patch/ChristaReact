@@ -2,7 +2,8 @@ import React, { useState } from 'react';
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 
 import '../CSS/App.css';
-import ButtonAppBar from './AppBar'
+import Home from './Home'
+import Weddings from './Weddings'
 
 import { createMuiTheme } from '@material-ui/core/styles';
 import { ThemeProvider } from '@material-ui/styles';
@@ -24,51 +25,20 @@ const theme = createMuiTheme({
 })
 
 function App() {
-  const [openMenu, setOpenMenu] = useState(false)
 
-  const showMenu = event => {
-      document.getElementById("menuBody").style.zIndex = "2"
-      setOpenMenu(true)
-    } 
-
-  function menuField(openMenu) {
-    
-    if (openMenu === true) {
-    
-      return (
-        <div>
-          <div>menu item</div>
-          
-          <div>menu item</div>
-        </div>
-      )
-    }
-
-  }
 
 
   return (
     <div className="App">
       <ThemeProvider theme={theme}>
         <Router>
-        <header className="App-header">
-          <ButtonAppBar state={showMenu}></ButtonAppBar>
-        </header>
-        <div>
-          <div className="appBody">
-            <div>app body</div>
 
-          </div>
-          <div className="menuBody" id="menuBody">
-            {menuField(openMenu)}
-          </div>
-        </div>
-        <Switch>
-          <Route></Route>
-          <Route></Route>
-          <Route></Route>
-        </Switch>
-</Router>
+          <Switch>
+            <Route exact path='/' component={Home}></Route>
+            <Route path='/Weddings' component={Weddings}></Route>
+            <Route></Route>
+          </Switch>
+        </Router>
       </ThemeProvider>
     </div>
   );
