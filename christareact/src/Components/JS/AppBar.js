@@ -31,7 +31,7 @@ function ButtonAppBar() {
 
     return (
         <div className={classes.root}>
-            <AppBar position="static" color="secondary">
+            <AppBar position="static" color="secondary" className="appBar">
                 <Toolbar>
                     <Button>Login</Button>
 

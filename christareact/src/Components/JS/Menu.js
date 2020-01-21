@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import '../CSS/Menu.css'
 
@@ -22,16 +22,20 @@ function Menu(props) {
 
             return (
                 <div className="menuBody">
-                    <nav>
-                        <button className='homeButton' component={Link} to='/'>Home</button>
-                        <button component={Link} to='/Weddings'>Weddings</button>
-                    </nav>
+                    
+                        <Link className='homeButton' to='/' onClick={() => event =>{refreshPage()}}>Home</Link>
+                        <Link to='/Weddings'>Weddings</Link>
+                    
                 </div>
             )
         }
 
     }
 
+    const refreshPage = () => {
+        
+        setOpenMenu(false)
+    }
 
     return (
         <div>

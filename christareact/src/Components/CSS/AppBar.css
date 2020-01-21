@@ -1,2 +1,4 @@
 
- 
+ .appBar {
+     z-index: 3;
+ }
