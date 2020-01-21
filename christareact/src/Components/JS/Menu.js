@@ -23,8 +23,10 @@ function Menu(props) {
             return (
                 <div className="menuBody">
                     
-                        <Link className='homeButton' to='/' onClick={() => event =>{refreshPage()}}>Home</Link>
-                        <Link to='/Weddings'>Weddings</Link>
+                        <Link className='menuButton' to='/' onClick={() => {refreshPage()}}>Home</Link>
+                        <Link className='menuButton' to='/Weddings' onClick={() => {refreshPage()}}>Weddings</Link>
+                        <Link className='menuButton' to='/Portraits' onClick={() => {refreshPage()}}>Portraits</Link>
+                        <Link className='menuButton' to='/Contact' onClick={() => {refreshPage()}}>Contact</Link>
                     
                 </div>
             )

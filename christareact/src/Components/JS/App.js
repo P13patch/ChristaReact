@@ -4,6 +4,8 @@ import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import '../CSS/App.css';
 import Home from './Home'
 import Weddings from './Weddings'
+import Portraits from './Portraits'
+import Contact from './Contact'
 
 import { createMuiTheme } from '@material-ui/core/styles';
 import { ThemeProvider } from '@material-ui/styles';
@@ -37,7 +39,8 @@ function App() {
           <Switch>
             <Route exact path='/' component={Home}></Route>
             <Route path='/Weddings' component={Weddings}></Route>
-            <Route></Route>
+            <Route path='/Portraits' component={Portraits}></Route>
+            <Route path='/Contact' component={Contact}></Route>
           </Switch>
         </Router>
       </ThemeProvider>
