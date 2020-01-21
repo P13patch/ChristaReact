@@ -9,10 +9,14 @@ import { Button, Typography, IconButton } from "./const"
 import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
 import MenuIcon from '@material-ui/icons/Menu';
+import { red } from '@material-ui/core/colors';
 
 const useStyles = makeStyles(theme => ({
     root: {
         flexGrow: 1,
+        position: "relative",
+        zIndex: 3,
+        
     },
     menuButton: {
         marginRight: theme.spacing(2),
@@ -31,8 +35,8 @@ function ButtonAppBar() {
 
     return (
         <div className={classes.root}>
-            <AppBar position="static" color="secondary" className="appBar">
-                <Toolbar>
+            <AppBar position="static" color="secondary" className='appBar'>
+                <Toolbar >
                     <Button>Login</Button>
 
                     <Typography variant="h6" color="secondary-constrastText" className={classes.title}>
