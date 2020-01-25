@@ -1,0 +1,24 @@
+
+
+.contactBody {
+    display: flex;
+    padding: 5vw;
+}
+
+.leftSplit {
+    display: inline-flex;
+    left: 0px;
+    width: 50%;
+    margin: 3vw;
+    padding: 3vw;
+    background-color: white;
+}
+
+.rightSplit {
+    display: inline-flex;
+    right: 0px;
+    width: 50%;
+    margin: 3vw;
+    padding: 3vw;
+    background-color: white;
+}
