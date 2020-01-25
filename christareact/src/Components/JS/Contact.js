@@ -7,23 +7,33 @@ function Contact() {
 
     return (
         <div className='contactBody'>
+
             <div className='leftSplit'>
                 <div>portrait</div>
             </div>
 
+
             <div className='rightSplit'>
                 <form>
-                    <div>Name</div>
-                    <span>
-                        <input type='text' value='First'></input>
-                        <input type='text' value='Last'></input>
-                    </span>
-                    <div>Email</div>
-                    <input type='text'></input>
-                    <div>Comments</div>
-                    <textarea name='comments' rows='10' cols='60'></textarea>
+                    <div className="nameBox">
+                        <div>Name</div>
+                        <span>
+                            <input type='text' name='first' style={{height:"2vw"}}></input>
+                            <input type='text' name='last' style={{height:"2vw"}}></input>
+                        </span>
+                    </div>
+                    <div className="emailBox">
+                        <div>Email</div>
+                        <input type='text' style={{height:"2vw", width:"20vw"}}></input>
+                    </div>
+                    <div className="commentsBox">
+                        <div>Comments</div>
+                        <textarea name='comments' rows='10' cols='60'></textarea>
+                    </div>
                 </form>
             </div>
+
+
         </div>
     )
 }
