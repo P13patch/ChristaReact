@@ -18,12 +18,17 @@ const useStyles = makeStyles(theme => ({
         zIndex: 3,
         
     },
-    menuButton: {
-        marginRight: theme.spacing(2),
-    },
+   
     title: {
         flexGrow: 1,
+        color: '#9e7f00',
+        
+        fontSize: '3vw',
     },
+
+    button: {
+        color: '#9e7f00'
+    }
 }));
 
 function ButtonAppBar() {
@@ -35,11 +40,11 @@ function ButtonAppBar() {
 
     return (
         <div className={classes.root}>
-            <AppBar position="static" color="secondary" className='appBar'>
+            <AppBar position="static"  className='appBar'>
                 <Toolbar >
-                    <Button>Login</Button>
+                    <Button className={classes.button}>Login</Button>
 
-                    <Typography variant="h6" color="secondary-constrastText" className={classes.title}>
+                    <Typography variant="h6"  className={classes.title}>
                         Christa Cutler Photography
                     </Typography>
                     <Menu></Menu>

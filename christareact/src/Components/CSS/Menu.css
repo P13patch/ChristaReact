@@ -8,7 +8,7 @@
 }
 
  .menuBody {
-    color: white;
+    
     text-align: left;
     right: 0px;
     width: 10vw;
@@ -20,7 +20,7 @@
     height: 800px;
     min-height: 100%;
     position: fixed;
-    background-image: linear-gradient(#6f6d66,#57524c);
+    background-image: linear-gradient(#6f6f6f,#595959);
     z-index: -1;
     box-shadow: -5px 10px 10px rgb(19, 19, 19);
   }

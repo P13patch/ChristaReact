@@ -43,7 +43,7 @@ function Menu(props) {
         <div>
             <div>
                 <IconButton onClick={showMenu}>
-                    <MenuIcon></MenuIcon>
+                    <MenuIcon style={{color: '9e7f00'}}></MenuIcon>
                 </IconButton>
 
             </div>
