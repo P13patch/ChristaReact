@@ -5,6 +5,13 @@
     padding: 5vw;
 }
 
+.contactHeader {
+   position: absolute;
+   font-size: 3vw;
+   width: 100%;
+   
+}
+
 .leftSplit {
     display: inline-flex;
     left: 0px;
