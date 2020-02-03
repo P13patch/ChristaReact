@@ -12,8 +12,14 @@ function Menu(props) {
     const [openMenu, setOpenMenu] = useState(false)
 
     const showMenu = event => {
-        document.getElementById("menuBody").style.zIndex = "2"
+        if (openMenu === false) {
+            document.getElementById("menuBody").style.zIndex = "2"
         setOpenMenu(true)
+        }
+        else {
+            setOpenMenu(false)
+        }
+        
     }
 
     const menuBody  = openMenu => {
