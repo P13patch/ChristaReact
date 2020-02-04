@@ -15,15 +15,19 @@ const useStyles = makeStyles(theme => ({
     root: {
         flexGrow: 1,
         position: "relative",
-        zIndex: 3,
+        position: 'relative',
+        top: '-60px',
         
     },
-   
+
+   appBar: {
+        backgroundColor: "rgba(249, 249, 249, 0)",
+        boxShadow: 'none',
+        
+   },
+
     title: {
         flexGrow: 1,
-        color: '#9e7f00',
-        
-        fontSize: '3vw',
     },
 
     button: {
@@ -40,13 +44,10 @@ function ButtonAppBar() {
 
     return (
         <div className={classes.root}>
-            <AppBar position="static"  className='appBar'>
+            <AppBar position="static"  className={classes.appBar}>
                 <Toolbar >
                     <Button className={classes.button}>Login</Button>
-
-                    <Typography variant="h6"  className={classes.title}>
-                        Christa Cutler Photography
-                    </Typography>
+                    <Typography variant="h6"  className={classes.title}></Typography>
                     <Menu></Menu>
                 </Toolbar>
             </AppBar>

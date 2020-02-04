@@ -1,5 +1,4 @@
 
- .appBar {
-    
-     z-index: 3;
- }
+.appBar {
+    color: rgba(249, 249, 249, 0);
+}

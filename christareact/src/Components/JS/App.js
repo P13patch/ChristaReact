@@ -10,6 +10,7 @@ import Contact from './Contact'
 import { createMuiTheme } from '@material-ui/core/styles';
 import { ThemeProvider } from '@material-ui/styles';
 import ButtonAppBar from './AppBar'
+import WGMarble from '../../Images/WG-Marble.jpg'
 
 const theme = createMuiTheme({
   palette: {
@@ -34,6 +35,10 @@ function App() {
   return (
     <div className="App">
       <ThemeProvider theme={theme}>
+        <div className='webHeaderBox'>
+          <img className="marbleImg" src={WGMarble}></img>
+          <div className='webHeaderTextBox'>Christa Cutler Photography</div>
+        </div>
         <Router>
         <ButtonAppBar></ButtonAppBar>
           <Switch>
