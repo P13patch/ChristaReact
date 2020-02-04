@@ -7,12 +7,12 @@ function Contact() {
 
     return (
         <div className='contactBody'>
-            
+
             <div className="contactHeader">Contact Me</div>
 
             <div className='leftSplit'>
                 <div >
-                    <img className="christaPortrait" src={ChristaPortrait}></img>
+                    <img className="christaPortrait" src={ChristaPortrait} alt='Christa Portrait'></img>
                 </div>
             </div>
 
