@@ -12,7 +12,6 @@ import { ThemeProvider } from '@material-ui/styles';
 import ButtonAppBar from './AppBar'
 import WGMarble from '../../Images/WG-Marble.jpg'
 
-var WebFont = require('webfontloader')
 
 const theme = createMuiTheme({
   palette: {
@@ -31,11 +30,6 @@ const theme = createMuiTheme({
 
 })
 
-WebFont.load({
-  google: {
-    families: ['Righteous', 'cursive']
-  }
-})
 
 
 

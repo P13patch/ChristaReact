@@ -46,7 +46,7 @@ function ButtonAppBar() {
         <div className={classes.root}>
             <AppBar position="static"  className={classes.appBar}>
                 <Toolbar >
-                    <Button className={classes.button}>Login</Button>
+                    <Button className={classes.button} size="large" variant="text">Login</Button>
                     <Typography variant="h6"  className={classes.title}></Typography>
                     <Menu></Menu>
                 </Toolbar>

@@ -48,8 +48,8 @@ function Menu(props) {
     return (
         <div>
             <div>
-                <IconButton onClick={showMenu}>
-                    <MenuIcon style={{color: '9e7f00'}}></MenuIcon>
+                <IconButton onClick={showMenu} size="medium">
+                    <MenuIcon style={{color: '9e7f00'}} fontSize="large"></MenuIcon>
                 </IconButton>
 
             </div>
