@@ -2,16 +2,26 @@
 
 .contactBody {
     display: flex;
+    flex-direction: column;
     padding: 5vw;
 }
 
-.contactHeader {
-   position: absolute;
-   font-size: 3vw;
-   width: 100%;
-   color: #9e7f00;
-   
-   
+.topSplit {
+    font-size: 3vw;
+    font-weight: bold;
+    color: #d3ae36;
+    text-shadow: 3px 3px 6px rgb(201, 201, 201);
+    background-color: white;
+    margin-left: 3vw;
+    margin-right: 3vw;
+    padding: 3vw;
+    background-image: linear-gradient(rgb(255, 255, 255), rgb(255, 255, 255));
+    border-bottom-style: solid;
+}
+
+.contactMiddle {
+    display: flex;
+    flex-direction: row;
 }
 
 .leftSplit {
