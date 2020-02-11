@@ -37,7 +37,7 @@ function Contact() {
                             </div>
                             <div className="commentsBox">
                                 <div>Comments</div>
-                                <textarea name='comments' rows='10' className='commentsTextArea'></textarea>
+                                <textarea name='comments' className='commentsTextArea'></textarea>
                             </div>
                         </fieldset>
                     </form>

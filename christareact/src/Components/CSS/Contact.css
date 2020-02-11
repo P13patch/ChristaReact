@@ -56,6 +56,9 @@
     height: 2vw;
     width: 45%;
     font-size: inherit;
+    border-style: solid;
+    border-width: thin;
+    border-color: rgb(184, 184, 184);
 }
 
 .nameLast {
@@ -63,6 +66,9 @@
     margin: .5vw;
     width: 45%;
     font-size: inherit;
+    border-style: solid;
+    border-width: thin;
+    border-color: rgb(184, 184, 184);
 }
 
 
@@ -75,6 +81,9 @@
     width: 100%;
     font-size: inherit;
     margin-top: 1vw;
+    border-style: solid;
+    border-width: thin;
+    border-color: rgb(184, 184, 184);
 }
 
 .commentsBox {
@@ -85,6 +94,13 @@
     font-size: inherit;
 
     margin-top: 1vw;
+}
+
+textarea {
+    height: 10vw;
+    width: 100%;
+    resize: none;
+    border-color: rgb(184, 184, 184);
 }
 
 
@@ -110,7 +126,45 @@
         margin: 1vw;
     }
 
+}
 
+@media only screen and (max-width: 425px) {
+   
+   .contactBody {
+       padding: 1vw;
+   }
+    .contactTop {
+       margin-left: 1vw;
+       margin-right: 1vw;
+       
+   }
+    .rightSplit {
+        margin-right: 1vw;
+    }
 
+ .christaPortrait {
+        width: 100%;
+        height: auto;
+    }
 
+    .leftSplit {
+        margin-left: 1vw;
+    }
+
+    .nameFirst {
+        height: 3vw;
+    }
+
+    .nameLast {
+        height: 3vw;
+    }
+
+    .emailTextField {
+        height: 3vw;
+    }
+
+    textarea {
+        height: 20vw;
+    }
+   
 }
