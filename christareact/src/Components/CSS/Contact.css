@@ -3,17 +3,17 @@
 .contactBody {
     display: flex;
     flex-direction: column;
-    padding: 5vw;
+    padding: 4vw;
 }
 
-.topSplit {
+.contactTop {
     font-size: 3vw;
     font-weight: bold;
     color: #d3ae36;
     text-shadow: 3px 3px 6px rgb(201, 201, 201);
     background-color: white;
-    margin-left: 3vw;
-    margin-right: 3vw;
+    margin-left: 5vw;
+    margin-right: 5vw;
     padding: 3vw;
     background-image: linear-gradient(rgb(255, 255, 255), rgb(255, 255, 255));
     border-bottom-style: solid;
@@ -28,7 +28,7 @@
     display: inline-flex;
     left: 0px;
     width: 50%;
-    margin-left: 3vw;
+    margin-left: 5vw;
     padding: 3vw;
     background-color: white;
 }
@@ -43,7 +43,7 @@
     text-align: left;
     right: 0px;
     width: 50%;
-    margin-right: 3vw;
+    margin-right: 5vw;
     padding: 3vw;
     background-color: white;
 }
@@ -52,10 +52,65 @@
     margin: 2vw;
 }
 
+.nameFirst {
+    height: 2vw;
+    width: 45%;
+    font-size: inherit;
+}
+
+.nameLast {
+    height: 2vw;
+    margin: .5vw;
+    width: 45%;
+    font-size: inherit;
+}
+
+
 .emailBox {
     margin: 2vw;
 }
 
+.emailTextField {
+    height: 2vw;
+    width: 100%;
+    font-size: inherit;
+    margin-top: 1vw;
+}
+
 .commentsBox {
     margin: 2vw;
+}
+
+.commentsTextArea {
+    font-size: inherit;
+
+    margin-top: 1vw;
+}
+
+
+@media only screen and (max-width: 768px) {
+   
+    .nameBox {
+        display: flex;
+        flex-direction: column;
+    }
+    .nameFirst {
+        display: flex;
+        width: 100%;
+        margin: 1vw;
+    }
+    .nameLast {
+        display: flex;
+        width: 100%;
+        margin: 1vw;
+    }
+    
+    .emailTextField {
+        width: 100%;
+        margin: 1vw;
+    }
+
+
+
+
 }
