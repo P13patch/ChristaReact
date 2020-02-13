@@ -1,9 +1,12 @@
 import React from 'react'
+
 import '../CSS/Contact.css'
 import ChristaPortrait from '../../Images/ChristaPortrait.jpg'
 
 
 function Contact() {
+
+
 
     return (
         <div className='contactBody'>
@@ -22,7 +25,7 @@ function Contact() {
 
 
                 <div className='rightSplit'>
-                    <form>
+                    <form method="POST">
                         <fieldset style={{borderStyle:'none'}}>
                             <div className="nameBox">
                                 <div>Name</div>
