@@ -12,7 +12,7 @@
 /build
 
 # Ignore files related to API keys
-/src/Components/JS/config.js
+src/Components/JS/config.js
 
 # misc
 .DS_Store
